@@ -10,3 +10,6 @@ variable "route53_zone_id" {
 variable "domain" {
   description = "The domain where Rabble Rouser is deployed, and where emails will be sent to/from"
 }
+variable "lambda-artefacts" {
+  description = "The name of the S3 bucket where the source code of the Lambdas live"
+}
