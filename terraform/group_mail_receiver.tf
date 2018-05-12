@@ -3,8 +3,8 @@ variable "group_mail_receiver_lambda_name" {
 }
 
 data "aws_s3_bucket_object" "group_mailer_zip" {
-  bucket = "rabblerouser-artefacts"
-  key = "lambdas/group-mail-receiver.zip"
+  bucket = "${var.lambda-artefacts}"
+  key = "group-mail-receiver.zip"
   # Defaults to latest version
 }
 
